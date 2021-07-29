@@ -23,24 +23,56 @@ function playOnce(playerSelection, computerSelection) {
         logic of game 
     */
     if (userOption === computerOption) {
-        return 'Tie';
+        console.log( 'Tie');
+        return 0;
     } else {
 
         if (userOption === 'rock' && computerOption === 'paper') {
-            return 'You lost ! Paper beats Rock ';
+            console.log( 'You lost ! Paper beats Rock ');
+            return false;
         } else if (userOption === 'rock' && computerOption === 'scissors') {
-            return 'You Win ! Rock beats Scissors  ';
+            console.log( 'You Win ! Rock beats Scissors  ');
+            return true;
         } else if (userOption === 'paper' && computerOption === 'rock') {
-            return 'You Win ! Paper beats Rock ';
+            console.log( 'You Win ! Paper beats Rock ');
+            return true;
         } else if (userOption === 'paper' && computerOption === 'scissors') {
-            return 'You lost ! Scissors cuts Paper  ';
+            console.log( 'You lost ! Scissors cuts Paper  ');
+            return false;
         } else if (userOption === 'scissors' && computerOption === 'paper') {
-            return 'You Win !  Scissors beats Paper  ';
+            console.log( 'You Win !  Scissors beats Paper  ');
+            return true;
         } else if (userOption === 'scissors' && computerOption === 'rock') {
-            return 'You lost ! Rock beats Scissors ';
+            console.log( 'You lost ! Rock beats Scissors ');
+            return false;
         }
 
     }
 }
 
-console.log(playOnce(userPlay(),computerPlay()));
+//! create main function for game
+function game() {
+    let playerScore = 0,
+        computerScore = 0;
+    let result;
+    let winner;
+    for(let i = 1; i<=5; i++){
+        result = playOnce(userPlay(),computerPlay());
+        if(result===0){
+            i--;
+        }else if(result === true){
+            playerScore++;
+        }else{
+            computerScore++;
+        }
+    }
+
+    if(playerScore>=3){
+        winner = `Player win!! Player is : ${playerScore} vs Computer is : ${computerScore}`;
+    }else{
+        winner = `Computer win!! Player is : ${playerScore} vs Computer is : ${computerScore}`;
+    }
+
+    console.log(winner);
+}
+game();
