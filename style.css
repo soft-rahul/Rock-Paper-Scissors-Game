@@ -30,3 +30,29 @@ body {
 .start__button {
   padding: 0.5rem 1.5rem;
 }
+
+
+    /* page 2 */
+
+    .main__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,minmax(10rem,auto));
+    }
+
+    /* score board */
+    .content__score,
+    .score__number{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .gameplay{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .button{
+        display: flex;
+        justify-content: space-evenly;
+    }
