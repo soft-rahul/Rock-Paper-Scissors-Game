@@ -1,0 +1,32 @@
+/* reset css */
+html {
+  font-size: 75%;
+}
+body {
+  font-size: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+/* Intro page style */
+
+.intro {
+}
+.intro__wrapper {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.intro__wrapper div {
+  padding: 0.4rem;
+}
+.start__button {
+  padding: 0.5rem 1.5rem;
+}
