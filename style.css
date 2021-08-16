@@ -33,7 +33,9 @@ body {
 
 
     /* page 2 */
-    
+    .main{
+      display: none;
+    }
     .main__container{
         display: grid;
         grid-template-columns: 1fr;
