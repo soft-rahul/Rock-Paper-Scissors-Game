@@ -78,7 +78,9 @@ body {
 
     /* page 4 */
     .sad{
-      display: none;
+      display:none;
+      justify-content: center;
+      align-items: center;
     }
     .sad__wrapper{
       height: 100vh;
