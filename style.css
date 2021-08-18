@@ -161,6 +161,13 @@ body {}
 
 /* page 4 */
 .sad {
+
+
+  background-color:#552277 ;
+  background-image: url(media/image-icons/vanishing-stripes.svg);
+  color:#fff;
+  font-size: 1.6rem;
+  
   display: none;
   justify-content: center;
   align-items: center;
