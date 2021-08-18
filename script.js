@@ -116,7 +116,7 @@ function winPage() {
 function lostPage() {
   const parentEle = document.querySelector(".sad");
   const gamePage = document.querySelector(".main");
-  parentEle.style.cssText = "display:flex";
+  parentEle.style.cssText = "display:flex; justify-content:center; align-items:center;";
   gamePage.style.display = "none";
 }
 

@@ -59,15 +59,35 @@ body {}
 
 /* page 2 */
 .main {
+  min-height: 100vh;
+  padding: 1rem;
+
+  background-color:#552277 ;
+  background-image: url(media/image-icons/vanishing-stripes.svg);
+
   display: none;
+
 }
 
 .main__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(5rem, auto) minmax(10rem, auto) minmax(2rem, auto) repeat(2, minmax(10rem, auto));
+  grid-template-rows: minmax(3rem, auto) minmax(6rem, auto) minmax(2rem, auto) repeat(2, minmax(8rem, auto));
   align-items: center;
 }
+  .heading h1{
+      padding:0 0 .2rem;
+      text-align: center;
+      color:#fff;
+      font-size: 1.2rem;
+    text-transform: capitalize;
+
+  }
+
+
+
+
+
 
 /* score board */
 .content__score,
