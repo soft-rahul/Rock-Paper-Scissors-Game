@@ -84,17 +84,29 @@ body {}
 
   }
 
-
-
-
-
-
-/* score board */
-.content__score,
-.score__number {
-  display: flex;
-  justify-content: space-evenly;
+  .content__score,
+  .score__number {
+    display: flex;
+    justify-content: space-evenly;
+  }
+.content__score{
+  align-items: center;
 }
+.content__score .vs{
+  color:#fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.score__number{
+  color:#fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+
+
 
 .gameplay {
   display: flex;
