@@ -76,7 +76,7 @@
 // game();
 
 
-// ui page 
+// hide start page and show game page
 
 function showGamePage() {
     const gamePage = document.querySelector('.main');
@@ -87,3 +87,24 @@ function showGamePage() {
 
 const btnOne = document.querySelector('.start__button');
 btnOne.addEventListener('click',showGamePage);
+
+
+
+
+// game page logic
+
+function winPage() {
+    const parentEle = document.querySelector('.congrats');
+    const gamePage = document.querySelector('.main');
+    parentEle.style.cssText = "display:flex";
+    gamePage.style.display = 'none';
+}
+
+
+function lostPage() {
+    const parentEle = document.querySelector('.sad');
+    const gamePage = document.querySelector('.main');
+    parentEle.style.cssText = "display:flex";
+    gamePage.style.display = 'none';
+}
+

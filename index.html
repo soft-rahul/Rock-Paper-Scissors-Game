@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    
   
     <section class="intro">
         <div class="intro__wrapper">
@@ -30,7 +30,7 @@
     <main class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>Message</h1>
+                <h1 class="js-msg">result message</h1>
             </div>
             <div class="main__content score">
                 <div class="content__score">
@@ -47,34 +47,34 @@
             </div>
             <div class="main__content score__number">
                 <div class="number__user">
-                    <h4>0</h4>
+                    <h4 class="js-user-score">0</h4>
                 </div>
                 <div>:</div>
                 <div class="number__computer">
-                    <h4>0</h4>
+                    <h4 class="js-comp-score">0</h4>
                 </div>
             </div>
             <div class="main__content gameplay">
                 <div class="gameplay__result">
-                    <span>user option</span>
+                    <img class="js-user-selection" src="" alt="">
                 </div>
                 <div class="gameplay__result">
-                    <span>computer option</span>
+                    <img class="js-comp-selection" src="" alt="">
                 </div>
             </div>
             <div class="main__content button">
                 <div class="button__options">
-                    <button>
+                    <button class="rps-btn" id="rock" >
                         <img src="media/image-icons/rock-svgrepo-com.svg" width="50" height="50" alt="">
                     </button>
                 </div>
                 <div class="button__options">
-                    <button>
+                    <button class="rps-btn" id="paper">
                         <img src="media/image-icons/paper-svgrepo-com.svg" width="50" height="50" alt="">
                     </button>
                 </div>
                 <div class="button__options">
-                    <button>
+                    <button class="rps-btn" id="scissors">
                         <img src="media/image-icons/scissors-svgrepo-com.svg" width="50" height="50" alt="">
                     </button>
                 </div>
@@ -85,7 +85,9 @@
 
     <!-- page 3 -->
 
-    <!-- <section class="congrats">
+
+
+    <section class="congrats">
         <div class="congrats__wrapper">
             <div class="animation">
                 <img src="media/image-icons/celebration.gif" style="max-width: 100%; height: auto;" alt="">
@@ -96,9 +98,10 @@
                 </h4>
             </div>
         </div>
-    </section> -->
+    </section>
+
 <!-- page 4 -->
-    <!-- <section class="sad">
+    <section class="sad">
         <div class="sad__wrapper">
             <div class="animation">
                 <img src="media/image-icons/sad.gif"
@@ -110,7 +113,7 @@
                 </h4>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- link js file -->
     <script src="script.js"></script>
 </body>
