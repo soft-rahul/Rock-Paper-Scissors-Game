@@ -70,9 +70,10 @@ body {}
 }
 
 .main__container {
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(3rem, auto) minmax(6rem, auto) minmax(2rem, auto) repeat(2, minmax(8rem, auto));
+  grid-template-rows: minmax(3rem, auto) minmax(10rem, auto) minmax(2rem, auto) repeat(2, minmax(10rem, auto));
   align-items: center;
 }
   .heading h1{
@@ -103,6 +104,10 @@ body {}
   font-size: 1.2rem;
   font-weight: bold;
 
+}
+.gameplay img{
+  background: #fff;
+  
 }
 
 

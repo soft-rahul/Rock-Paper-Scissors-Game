@@ -38,14 +38,14 @@ function playOnce(playerSelection, computerSelection) {
     `media/image-icons/${userOption}-svgrepo-com.svg`
   );
 
-  displayUserSelection.style.cssText = "width:50px; height:50px";
+  displayUserSelection.style.cssText = "width:50px; height:50px; padding:.4rem; border-radius:.4rem;";
 
   displayComputerSelection.setAttribute(
     "src",
     `media/image-icons/${computerOption}-svgrepo-com.svg`
   );
 
-  displayComputerSelection.style.cssText = "width:50px; height:50px";
+  displayComputerSelection.style.cssText = "width:50px; height:50px; padding:.4rem; border-radius:.4rem;";
 
   // updating user and computer Scores
   const playerScore = document.querySelector(".js-user-score");
@@ -97,7 +97,7 @@ function playOnce(playerSelection, computerSelection) {
 function showGamePage() {
   const gamePage = document.querySelector(".main");
   const introPage = document.querySelector(".intro");
-  gamePage.style.cssText = "display:block";
+  gamePage.style.cssText = "display:flex; justify-content:center; align-items:center;";
   introPage.style.cssText = "display:none";
 }
 
