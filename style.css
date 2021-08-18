@@ -2,20 +2,26 @@
 html {
   font-size: 75%;
 }
+
 body {
   font-size: 1rem;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-}
+
+body {}
+
 /* Intro page style */
 
 .intro {
+  background-color: #552277;
+  background-image: url(media/image-icons/vanishing-stripes.svg);
 }
+
 .intro__wrapper {
   height: 100vh;
   padding: 2rem;
@@ -23,70 +29,92 @@ body {
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 1.8rem;
 }
+
 .intro__wrapper div {
   padding: 0.4rem;
 }
+
+.intro__wrapper h2 {
+  padding: .2rem .4rem;
+  color: #fff;
+}
+
 .start__button {
-  padding: 0.5rem 1.5rem;
+  padding: .4rem 2.5rem;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+
+
+
+}
+
+.start__button:hover,
+.start__button:active {
+  background-color: black;
+  color: #fff;
 }
 
 
-    /* page 2 */
-    .main{
-      display: none;
-    }
-    .main__container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:minmax(5rem,auto) minmax(10rem,auto) minmax(2rem,auto) repeat(2,minmax(10rem,auto));
-       align-items: center;
-    }
+/* page 2 */
+.main {
+  display: none;
+}
 
-    /* score board */
-    .content__score,
-    .score__number{
-        display: flex;
-        justify-content: space-evenly;
-    }
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(5rem, auto) minmax(10rem, auto) minmax(2rem, auto) repeat(2, minmax(10rem, auto));
+  align-items: center;
+}
 
-    .gameplay{
-        display: flex;
-        justify-content: space-evenly;
-    }
+/* score board */
+.content__score,
+.score__number {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    .button{
-        display: flex;
-        justify-content: space-evenly;
-    }
+.gameplay {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    /* page 3 */
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    .congrats{
-      
-      padding:1rem;
-      display:none;
-      
-    }
-    .congrats__wrapper{
-      margin:auto;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+/* page 3 */
 
-    /* page 4 */
-    .sad{
-      display:none;
-      justify-content: center;
-      align-items: center;
-    }
-    .sad__wrapper{
-      height: 100vh;
-      padding:1rem .2rem;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+.congrats {
+
+  padding: 1rem;
+  display: none;
+
+}
+
+.congrats__wrapper {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* page 4 */
+.sad {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.sad__wrapper {
+  height: 100vh;
+  padding: 1rem .2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
