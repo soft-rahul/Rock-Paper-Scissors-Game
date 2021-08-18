@@ -1,19 +1,17 @@
+/* desktop site */
+@media (max-width:800px) {
+  html{
+    
+    font-size: 80%;
+  }
+   
+}
 /* reset css */
 html {
   font-size: 75%;
 }
 
-@media (min-width:800px){
-  html{
-    font-size: 90%;
-  }
-}
 
-@media (min-width:1600px){
-  html{
-    font-size: 100%;
-  }
-}
 
 body {
   font-size: 1rem;
@@ -26,7 +24,9 @@ body {
 }
 
 
-
+body{
+  font-size: 1rem;
+}
 /* Intro page style */
 
 .intro {
@@ -195,3 +195,4 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
