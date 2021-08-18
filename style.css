@@ -3,6 +3,8 @@ html {
   font-size: 75%;
 }
 
+
+
 body {
   font-size: 1rem;
 }
@@ -13,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-body {}
+
 
 /* Intro page style */
 
@@ -138,6 +140,7 @@ body {}
 
 .congrats__wrapper {
   height: 80%;
+  
   margin: auto;
   display: flex;
   flex-flow: column;
@@ -146,6 +149,7 @@ body {}
   color:#fff;
   font-size: 1.6rem;
 }
+ 
 
 .pa{
   border:2px solid #fff;
@@ -167,7 +171,7 @@ body {}
   background-image: url(media/image-icons/vanishing-stripes.svg);
   color:#fff;
   font-size: 1.6rem;
-  
+
   display: none;
   justify-content: center;
   align-items: center;

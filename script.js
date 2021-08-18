@@ -109,7 +109,7 @@ btnOne.addEventListener("click", showGamePage);
 function winPage() {
   const parentEle = document.querySelector(".congrats");
   const gamePage = document.querySelector(".main");
-  parentEle.style.cssText = "display:flex";
+  parentEle.style.cssText = "display:flex; justify-content:center; align-items:center;";
   gamePage.style.display = "none";
 }
 
